@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(45deg, orange, crimson, blue);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 75%;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.bgimage {
+  position: absolute;
+  width: 500px;
+}
+
+.header-class {
+  background-color: rgb(39, 155, 155);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  border: 5px solid rgb(146, 190, 190);
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.header-class,
+h1 {
+  text-align: center;
+  font-variant-caps: all-small-caps;
+  font-size: 50px;
+}
+
+.survey-box-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 25px;
+  outline: none;
+  border: none;
+}
+
+.button-class,
+.submit {
+  padding: 10px;
+  margin: 15px 15px;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  color: rgba(11, 53, 53, 0.856);
+  font-size: 15px;
+  font-weight: 900;
+  font-variant-caps: all-small-caps;
+}
+.button-class:hover,
+.submit:hover {
+  background-color: rgba(150, 143, 255, 0.986);
+}
+
+/* Dropdown List below */
+
+.dropdown-container {
+  top: 50px;
+  width: 200px;
+  position: relative;
+}
+
+.click {
+  background-color: rgba(76, 66, 219, 0.986);
+}
+
+.click:hover {
+  background-color: rgba(150, 143, 255, 0.986);
+}
+
+.click,
+.links {
+  padding: 15px;
+  font-size: 1.5em;
+  font-family: futura Md BT;
+  border: none;
+  outline: none;
+  width: 200px;
+  color: #fff;
+  transition: 0.3s;
+}
+.list {
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.5s;
+}
+
+.newlist {
+  transform: scaleY(1);
+}
+
+.links {
+  background-color: rgb(104, 104, 185);
+}
+
+.links:hover {
+  background-color: rgba(76, 66, 219, 0.986);
+  transform: scale(1.1);
+}
+/* Dropdown List above */
+
+.main-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1500px;
+  background-image: url(bgimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgb(146, 190, 190);
+}
+
+.footer-div-class {
+  background-color: darkcyan;
+  width: 100%;
+  margin: auto;
+  height: 100px;
+  border: 5px solid rgb(146, 190, 190);
+  border-top: none;
+}
+
+.footer-info-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  padding-top: 15px;
+  letter-spacing: 5px;
+  list-style-type: none;
+}
