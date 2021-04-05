@@ -113,3 +113,21 @@ const welcome = (
 
 document.write(welcome());
 */
+
+/*
+function reverseString(str) {
+  let arrayStr = [str];
+  let newStr = arrayStr.slice(4, 1);
+  let newStr2 = arrayStr.slice(3, 1);
+  let newStr3 = arrayStr.slice(2, 1);
+  let newStr4 = arrayStr.slice(1, 1);
+  let newStr5 = arrayStr.slice(0, 1);
+  return newStr + newStr2 + newStr3 + newStr4 + newStr5;
+}
+*/
+let str = "hello";
+let arrayStr = str.split();
+let newStr = arrayStr.splice(3, 1);
+
+document.write(newStr);
+// document.write(reverseString("hello"));
