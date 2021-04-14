@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", "Dela Gothic One", cursive, sans-serif;
+  /* border: 0.5px solid black; */
+}
+
+:root {
+  --div_1-background-color: red;
+  --div_2-background-color: green;
+  --div_3-background-color: blue;
+  --div_4-background-color: yellow;
+  --div_margin: 25px 25px;
+  --div_padding: 25px;
+  --div_p_margin: 25px;
+  --div_color: #fff;
+  --primary_background-color: #32e08c;
+  --secondary_background-color: #60947b;
+  --third_background-color: #e04631;
+  --divider_height: 300px;
+  --divider_background-color: #333;
+}
+
+/* Body and the Title */
+body {
+  background-color: var(--primary_background-color);
+  height: 400vh;
+}
+
+h1 {
+  font-size: 3em;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+  background-color: var(secondary_background-color);
+}
+/* Body and the Title */
+
+/* Navbar Below */
+.navbar {
+  height: var(--divider_height);
+  background-color: var(--divider_background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Navbar Above */
+
+/* Container Below */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  background-image: url(bg_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* Container Above */
+
+/* The Divs Below */
+.div_1 {
+  background-color: var(--div_1-background-color);
+  margin: var(--div_margin);
+  padding: var(--div_padding);
+  height: var(--div_height);
+  color: var(--div_color);
+}
+
+.div_2 {
+  background-color: var(--div_2-background-color);
+  margin: var(--div_margin);
+  padding: var(--div_padding);
+  color: var(--div_color);
+}
+
+.div_3 {
+  background-color: var(--div_3-background-color);
+  margin: var(--div_margin);
+  padding: var(--div_padding);
+  color: var(--div_color);
+}
+
+.div_4 {
+  background-color: var(--div_4-background-color);
+  margin: var(--div_margin);
+  padding: var(--div_padding);
+  color: var(--div_color);
+  color: #333;
+}
+/* The divs above */
+
+/* Div_p Below */
+.div_1 p {
+  margin: var(--div_p_margin);
+}
+
+.div_2 p {
+  margin: var(--div_p_margin);
+}
+
+.div_3 p {
+  margin: var(--div_p_margin);
+}
+
+.div_4 p {
+  margin: var(--div_p_margin);
+}
+/* Div_p Above */
+
+/* Div_p ::before and ::after Below */
+.div_1 p::before,
+.div_1 p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.div_2 p::before,
+.div_2 p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.div_3 p::before,
+.div_3 p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.div_4 p::before,
+.div_4 p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+}
+/* Div_p ::before and ::after Above */
+
+/* Divider with its content Below */
+.divider_1 {
+  height: var(--divider_height);
+  background-color: var(--divider_background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.divider_2 {
+  height: var(--divider_height);
+  background-color: var(--secondary_background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.divider_3 {
+  height: var(--divider_height);
+  background-color: var(--third_background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.divider_1 .quote_p_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-style: italic;
+  position: relative;
+  padding: 20px;
+}
+
+.divider_2 .quote_p_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-style: italic;
+  position: relative;
+  padding: 20px;
+}
+
+.divider_3 .quote_p_3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-style: italic;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+/* Dividers with its content Above */
+
+/* Divider Quote::before and ::After Below*/
+.quote_p_1::before {
+  display: block;
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  margin: 10px;
+}
+
+.quote_p_2::after {
+  display: block;
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  margin: 10px;
+}
+
+.quote_p_3::before {
+  display: block;
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  margin-right: 10px;
+}
+
+.quote_p_3::after {
+  display: block;
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  margin: 10px;
+}
+/* Divider Quote::before and ::After Above*/
+
+/* Second_half_div Below */
+
+.second_container {
+  position: relative;
+  height: 200vh;
+}
+
+.second_container::before {
+  height: 200vh;
+  position: absolute;
+  content: "";
+  background-image: url(bg_2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.second_container h2 {
+  position: relative;
+  font-size: 2.5em;
+  color: white;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+/* Second_half_div Above */
