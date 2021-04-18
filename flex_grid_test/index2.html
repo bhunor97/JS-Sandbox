@@ -141,6 +141,215 @@
       </section>
       <div class="second_container">
         <h2>Second Container Content Title</h2>
+
+        <form
+          action="submit_test_page.html"
+          method="GET"
+          enctype="multipart/form-data"
+        >
+          <!-- 
+            Name: 
+            name A string specifying a name for the input control. This
+            name is submitted along with the control's value when the form
+            data is submitted. 
+            -->
+          <!-- 
+            For: 
+            Set it to the "id" of the input so it will highlight 
+            the text section when it's clicked 
+          -->
+          <!-- 
+            Value: 
+            A default value typed in automatically to the text-bar. 
+            It will submit the value given if no changes happen to it. 
+
+            ^these are interchangableˇ
+
+            Placeholder:
+            Something to prompt the user to type in stuff.
+            It shows up in a light-grey color.
+            It won't submit automatically.
+          -->
+          <div>
+            <label for="name">
+              Name
+              <input
+                name="name"
+                id="name"
+                type="text"
+                placeholder="placeholder name"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label for="password">
+              Password
+              <input
+                name="password"
+                id="password"
+                type="password"
+                placeholder="placeholder password"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label for="email">
+              Email
+              <input
+                type="email"
+                name="enail"
+                id="email"
+                placeholder="placeholder email"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <!-- 
+            Min: Lowest number required
+            Max: Highest number required 
+            -->
+            <label for="age">
+              Age
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="placeholder age"
+                min="18"
+                max="99"
+                required
+              />
+            </label>
+          </div>
+          <div>
+            <label for="date">
+              Date of Birth
+              <input
+                type="date"
+                name="date"
+                id="date"
+                value="2020-02-04"
+                min="2020-01-01"
+                max="2030-01-01"
+                required
+              />
+            </label>
+          </div>
+          <!-- 
+            CHECKBOXES Below:
+            You can check as many as you want.
+            If you want the user to check only one
+            then use radio buttons 
+          -->
+          <div>
+            Favourite Food
+            <div>
+              <label for="banana">
+                Banana
+                <input type="checkbox" name="banana" id="banana" />
+              </label>
+            </div>
+            <div>
+              <label for="apple">
+                Apple
+                <input type="checkbox" name="apple" id="apple" />
+              </label>
+            </div>
+          </div>
+          <!-- 
+            RADIO BUTTONS Below:
+
+            If you share the exact same "name" 
+            then you'll only be able to select one radio button
+
+            You have to add a value so you'll know what information you get
+          -->
+          <div>
+            Gender
+            <div>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male" />
+            </div>
+            <div>
+              <label for="male">Female</label>
+              <input type="radio" name="gender" id="female" value="female" />
+            </div>
+
+            <!-- 
+              !SELECT and OPTION! below:
+
+              "multiple" - allows you to select multiple values 
+              inside the select section
+            -->
+            <label for="eyecolor">Eyecolor</label>
+            <select name="eyecolor" id="eyecolor" multiple>
+              <option value="Green">Green</option>
+              <option value="Red">Red</option>
+              <option value="Blue">Blue</option>
+              <option value="Orange">Orange</option>
+              <option value="Purple">Purple</option>
+              <option value="Yellow">Yellow</option>
+              <option value="White">White</option>
+              <option value="Black">Black</option>
+            </select>
+          </div>
+          <!-- 
+            TEXTAREA Below:
+
+            Don't leave white-space when you add text to the text-area!
+          -->
+          <div>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="50" rows="5">
+Type here!</textarea
+            >
+          </div>
+          <!-- 
+            FILE Below: 
+
+            You have to specify a new attribute in the form section for this
+            enctype="multipart/form-data"
+          -->
+          <div>
+            <label for="file">Upload your files</label>
+            <input type="file" name="file" id="file" />
+          </div>
+          <!-- 
+            PHONE or "tel" below: 
+
+            On mobiles, this will allow the user to use a special keypad
+          -->
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" required />
+          </div>
+          <!-- 
+            URL below: 
+          -->
+          <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url" required />
+          </div>
+          <!-- 
+            COLOR below: 
+          -->
+          <div>
+            <label for="color">Select a color</label>
+            <input type="color" name="color" id="color" />
+          </div>
+          <!-- 
+            BUTTONS below: 
+
+            On mobiles, this will allow the user to use a special keypad
+          -->
+          <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
       </div>
     </main>
   </body>
