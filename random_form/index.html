@@ -5,50 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Java Script Sandbox</title>
+    <title>Sandbox</title>
   </head>
   <body>
     <header class="header-class">
-      <h1>A test project</h1>
+      <h1>Test project</h1>
     </header>
 
     <main class="main-class">
-      <!-- Submit buttons-->
-      <div class="btn-div">
-        <label for="name-label">Enter your name:</label>
-        <input class="name" type="text" />
-        <button class="button-class">Submit your name</button>
-      </div>
+      <!-- FORM_1  STARTS HERE -->
+      <section class="container_1">
+        <h2>Basic Info Form</h2>
+        <form
+          id="form_1"
+          class="form_1"
+          action="submit_page.html"
+          method="GET"
+          enctype="multipart/form-data"
+        >
+          <div class="name_div">
+            <label for="name">Name </label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="age_div">
+            <label for="date"> Date of Birth </label>
+            <input
+              type="date"
+              name="date"
+              id="date"
+              min="1900-01-01"
+              max="2000-01-01"
+              required
+            />
+          </div>
 
-      <div class="btn-div">
-        <label for="age-label">Enter your age:</label>
-        <input class="age" type="text" />
-        <button class="button-class">Submit your age</button>
-      </div>
+          <div class="gender_div">
+            What is your gender?
+            <label for="male"> Male</label>
+            <input id="male" type="radio" name="gender" value="male" />
+            <label for="female"> Female</label>
+            <input id="female" type="radio" name="gender" value="female" />
+          </div>
 
-      <div class="btn-div">
-        <label for="height-label">Enter your height:</label>
-        <input class="height" type="text" />
-        <button class="button-class">Submit your height</button>
-      </div>
-      <!-- Submit buttons-->
+          <div class="email_div">
+            <label for="email"> Email </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+          <div id="buttons_1_div" class="buttons_1_div">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+      <!-- FORM_2 STARTS HERE -->
+      <section class="container_2">
+        <form
+          class="form_2"
+          id="form_2"
+          action="submit_page.html"
+          method="GET"
+          enctype="multipart/form-data"
+        >
+          <div id="username_div" class="username_div">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Choose your username"
+              required
+            />
+          </div>
 
-      <div class="dropdown-container">
-        <button class="click">Click here!</button>
-        <div class="list">
-          <button class="links">Link 1</button>
-          <button class="links">Link 2</button>
-          <button class="links">Link 3</button>
-          <button class="links">Link 4</button>
-          <button class="links">Link 5</button>
-          <button class="links">Link 6</button>
-          <button class="links">Link 7</button>
-          <button class="links">Link 8</button>
-        </div>
-      </div>
-      <div>asdasd</div>
+          <div id="password_div" class="password_div">
+            <label for="password" id="password"> Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Create a password"
+              max="5"
+              required
+            />
+          </div>
+          <div id="buttons_2_div" class="buttons_2_div">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
     </main>
-
+    <!-- FOOTER STARTS HERE -->
     <footer id="footer">
       <div class="footer-div-class">
         <ul class="footer-info-list">
