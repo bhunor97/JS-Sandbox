@@ -1,4 +1,6 @@
 const button = document.getElementById("button");
+const nameBar = document.getElementById("name_bar");
+// nameBar.value = " ";
 
 const firstName = [
   "John",
@@ -12,6 +14,9 @@ const firstName = [
   "Alice",
   "Kate",
 ];
+
+firstName.unshift("Allison", "Jonah", "Thomas", "Jeffrey", "Adam");
+
 const lastName = [
   "Bronson",
   "Ramsay",
@@ -25,10 +30,20 @@ const lastName = [
   "Gibbson",
 ];
 
-function generateName(first, last) {
-  let random = Math.floor(Math.random() * 10);
-  return first[random] + " " + last[random];
-}
+lastName.push("Potter", "Pilgrim", "Nash", "McQueen", "Knocker");
 
-const name = generateName(firstName, lastName);
-console.log(name);
+// function generateName(first, last) {
+//   let randomFirst = Math.floor(Math.random() * firstName.length);
+//   let randomSecond = Math.floor(Math.random() * lastName.length);
+//   return first[randomFirst] + " " + last[randomSecond];
+// }
+// const name = generateName(firstName, lastName);
+// button.onclick = () => {
+//   nameBar.value = name;
+// };
+
+button.onclick = () => {
+  let first = firstName[Math.floor(Math.random() * firstName.length)];
+  let second = lastName[Math.floor(Math.random() * lastName.length)];
+  nameBar.value = first + " " + second;
+};
