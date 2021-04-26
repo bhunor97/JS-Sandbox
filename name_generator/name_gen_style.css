@@ -1,9 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: #fff;
   background-color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px;
+}
+
+h1 {
+  padding: 10px;
+}
+
+#section_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  padding: 20px;
+  height: 10rem;
+  width: 20rem;
+}
+
+#name_bar {
+  height: 40px;
+  width: 250px;
+  text-align: center;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+#button {
+  font-size: 1rem;
+  margin: 15px;
+  padding: 10px;
+  transform: scale(0.8);
+  transition: 0.3s ease-in-out;
+}
+#button:hover {
+  transform: scale(1);
+  background-color: #ff3535;
+  color: #fff;
+}
+
+#section_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 550px;
+  width: 75%;
+}
+#section_2 h2 {
+  padding: 10px;
+}
+
+.firstname_div {
+  height: inherit;
+  padding: 15px;
+}
+.firstname_div ul {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: 450px;
+}
+
+.lastname_div {
+  height: inherit;
+  padding: 15px;
+}
+.lastname_div ul {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: 450px;
 }
 
 /*# sourceMappingURL=name_gen_style.css.map */
