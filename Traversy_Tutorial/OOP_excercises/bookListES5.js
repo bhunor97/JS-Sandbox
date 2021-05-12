@@ -1,4 +1,3 @@
-log = console.log;
 // BOOK CONSTRUCTOR
 function Book(title, author, isbn) {
   this.title = title;
@@ -48,7 +47,7 @@ const form = document.getElementById("book-form").addEventListener("submit", fun
     ui.addBookToList(book);
 
     // Clear fields
-    UI.clearFields();
+    ui.clearFields();
 
     e.preventDefault();
   });
