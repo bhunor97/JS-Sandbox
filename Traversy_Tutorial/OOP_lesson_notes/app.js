@@ -167,9 +167,22 @@ class Person_3 {
         this.lastName = lastName;
     }
     greeting() {
-        return `Hello there ${this.firstName} ${this.lastName}` 
+        return `Hello there ${this.firstName} ${this.lastName}!` 
     }
 }
-
 const bill = new Person_3("Bill", "Bronson");
-log(bill.greeting())
+// // log(bill.greeting())
+
+class Customer_3 extends Person_3 {
+    constructor(firstName, lastName, phoneNumber, membership) {
+        // super - "since this extends Person_3 constructor we want to call the firstName and lastName with the 'super' keyword"
+        super (firstName, lastName)
+        this.phoneNumber = phoneNumber;
+        this.membership  = membership;
+    }
+    static salary () {
+        return 500`$`;
+    }
+}
+const newCustomer = new Customer_3("John", "Adams", "000-223-43-45", "premium");
+log(newCustomer.greeting())
