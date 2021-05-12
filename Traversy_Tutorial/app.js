@@ -11,7 +11,7 @@ const guest2 = new NewMembers("Greg", 28, "878-23-41")
 // // console.log(guest1, guest2)
 
 
-// -----------------------------------------------------
+// ---------------------------------------------------------------
 // BUILT IN CONSTRUCTORS
 
 const test1 = new String("asdasd");
@@ -26,7 +26,7 @@ const regex2 = new RegExp("\\w+"); // you need an "\" escape way if you write re
 // // console.log(regex2)
 
 
-// -----------------------------------------------------
+// ---------------------------------------------------------------
 // PROTOTYPES
 
 function Person (firstName, lastName) {
@@ -52,13 +52,13 @@ person2.LastNameChange("Truman")
 // console.log(person1.hasOwnProperty("firstName"))
 
 
-// -----------------------------------------------------
+// ---------------------------------------------------------------
 // PROTOTYPAL INHERITANCE
 
-Person.prototype.greting = function () {
+Person.prototype.greeting = function () {
     return `Hello there ${this.firstName} ${this.lastName}`;
 }
-// // console.log(person2.greting())
+// // console.log(person2.greeting())
 
 function Customer(firstName, lastName, phone, membership) {
     Person.call(this, firstName, lastName);
@@ -83,7 +83,7 @@ Customer.prototype.greeting = function() {
 // // console.log(customer1.greeting())
 
 
-// -----------------------------------------------------
+// ---------------------------------------------------------------
 // USING 'OBJECT.CREATE' - ES5 - ("not the easiest way")
 const emptyObject = {
 }
@@ -125,7 +125,7 @@ const george = Object.create(personPrototypes, {
 // // console.log(george)
 
 
-// -----------------------------------------------------
+// ---------------------------------------------------------------
 // ES6 CLASSES
 class Person_2 {
     constructor(firstName, lastName, dob) {
@@ -153,6 +153,23 @@ class Person_2 {
 }
 const dave = new Person_2("Dave", "Johnson")
 dave.getsMarried("Anderson")
-console.log(dave.greeting())
-console.log(Person_2.addNumbers(5,7))
+// // console.log(dave.greeting())
+// // console.log(Person_2.addNumbers(5,7))
 
+
+// ---------------------------------------------------------------
+// SUB CLASSES
+let log = console.log;
+
+class Person_3 {
+    constructor (firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    greeting() {
+        return `Hello there ${this.firstName} ${this.lastName}` 
+    }
+}
+
+const bill = new Person_3("Bill", "Bronson");
+log(bill.greeting())
