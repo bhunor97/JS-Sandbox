@@ -17,6 +17,9 @@ function loadContent () {
             let response = this.responseText
             console.log(response)
             txtDiv.append(response)
+            
+        } else if (this.status == 404) {
+            alert("NOT FOUND!")
         }
     }
     // Sends request
